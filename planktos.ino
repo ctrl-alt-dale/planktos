@@ -1,3 +1,12 @@
+/*
+planktOS (from "plankton" meaning wanderer/drifting 'small little creatures')
+A simple RTOS for small AVR MCUs (ATmega328PB)
+
+Uses:
+Adafruit_BMP085
+SSD1306Ascii
+*/
+
 #include <Arduino.h>
 #include <Adafruit_BMP085.h>
 #include "SSD1306Ascii.h"
