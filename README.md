@@ -5,7 +5,7 @@
 `planktos.ino` is a monolithic Arduino firmware for an AVR-based device built around:
 
 - A 128x64 SSD1306 OLED display over I2C.
-- A Bosch BMP085 pressure/temperature sensor over I2C.
+- A Bosch BMP085/BMP180 pressure/temperature sensor over I2C.
 - A FRAM device at I2C address `0x50` for persistent settings and calculator storage.
 - Four input pads/buttons:
   - `PAD_P`  = pin `2`
