@@ -254,31 +254,31 @@ const char* const calcOpDescs[] PROGMEM = {
   copd8, copd9, copd10, copd11, copd12, copd13, copd14, copd15, copd16
 };
 
-const char bl0[] PROGMEM = " +------------------+";
-const char bl1[] PROGMEM = " l                  l";
-const char bl2[] PROGMEM = " l    __________    l";
-const char bl3[] PROGMEM = " l   [ PlanktOS ]   l";
-const char bl4[] PROGMEM = " l    ```````````   l";
-const char bl5[] PROGMEM = " l                  ";
-const char bl6[] PROGMEM = " +------------------+";
+const char bl0[] PROGMEM = " .------------------.";
+const char bl1[] PROGMEM = " |                  |";
+const char bl2[] PROGMEM = " |                  |";
+const char bl3[] PROGMEM = " |  [  PlanktOS  ]  |";
+const char bl4[] PROGMEM = " |                  |";
+const char bl5[] PROGMEM = " |                  |";
+const char bl6[] PROGMEM = " '------------------'";
 const char bl7[] PROGMEM = "  [i] Touch any key  ";
 const char* const bootLines[] PROGMEM = { bl0, bl1, bl2, bl3, bl4, bl5, bl6, bl7 };
 
 const char sil0[] PROGMEM = "UPTIME   ";
 const char sil1[] PROGMEM = "FREE RAM ";
-const char sil2[] PROGMEM = "      Vcc";
-const char sil3[] PROGMEM = " MCU Name";
-const char sil4[] PROGMEM = "CPU CLOCK";
-const char sil5[] PROGMEM = "     TEMP";
-const char sil6[] PROGMEM = " PRESSURE";
-const char sil7[] PROGMEM = " ALTITUDE";
-const char sil8[] PROGMEM = "   BRIGHT";
-const char sil9[] PROGMEM = " AUTO-DIM";
-const char sil10[] PROGMEM = " AUTO-SLP";
+const char sil2[] PROGMEM = "VCC      ";
+const char sil3[] PROGMEM = "MCU      ";
+const char sil4[] PROGMEM = "CPU CLCK ";
+const char sil5[] PROGMEM = "TEMP     ";
+const char sil6[] PROGMEM = "PRESSURE ";
+const char sil7[] PROGMEM = "ALTITUDE ";
+const char sil8[] PROGMEM = "BRGHTNSS ";
+const char sil9[] PROGMEM = "AUTO-DIM ";
+const char sil10[] PROGMEM = "AUTO-SLP ";
 const char sil11[] PROGMEM = "PRECISION";
-const char sil12[] PROGMEM = "     FRAM";
-const char sil13[] PROGMEM = " BLD DATE";
-const char sil14[] PROGMEM = " BLD TIME";
+const char sil12[] PROGMEM = "FRAM     ";
+const char sil13[] PROGMEM = "BLD DATE ";
+const char sil14[] PROGMEM = "BLD TIME ";
 const char* const siLabels[] PROGMEM = {
   sil0, sil1, sil2, sil3, sil4, sil5, sil6, sil7,
   sil8, sil9, sil10, sil11, sil12, sil13, sil14
@@ -571,7 +571,7 @@ void drawMenu() {
   display.print(F("    .----------.    "));
   drawMenuAppLine();
   display.setCursor(0, 6);
-  display.print(F("    '----------'    "));
+  display.print(F("    `----------'    "));
   display.setCursor(0, 7);
   display.print(("[P]  [N]    [>]  [B]"));
   drawSensorLine();
