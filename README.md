@@ -61,7 +61,7 @@ The sketch contains AVR-specific code paths and MCU identification for:
 - ATmega168P
 - ATmega168
 
-If no match exists, `MCU_STR` becomes `"Unlisted AVR"`.
+If no match exists, `MCU_STR` becomes `"Unlisted MCU"`.
 
 ---
 
@@ -339,10 +339,10 @@ This is set after successful sensor initialization.
 
 - `sysFram`: FRAM connectivity status
 - `siTemp10`: temperature in tenths of a degree
-- `siPres`: pressure in pascals
-- `siAlt`: altitude in meters
-- `siVcc`: supply voltage in millivolts
-- `siRam`: free RAM in bytes
+- `siPres`: pressure in (hPa)scals
+- `siAlt`: altitude in (M)eters (configuration is set to Philippines, Region III)
+- `siVcc`: supply voltage in (V)olts
+- `siRam`: free RAM in (B)ytes
 
 ### 5.9 Bitfield flag group
 
@@ -470,11 +470,11 @@ The integer digit budget decreases as precision increases.
 
 Includes labels for:
 
-- Brightness
-- Auto-dim
-- Auto-sleep
-- Precision
-- SW SCREEN
+- Brightness (display)
+- Auto-dim (system)
+- Auto-sleep (system)
+- Precision (avr calc)
+- SW SCREEN (stopwatch)
 - FACT.RESET
 
 ### 6.7 Calculator labels and descriptions
